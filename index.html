@@ -1,0 +1,246 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=7" />
+<title>单页导航 - 个性网址导航</title>
+<meta name="Keywords" content="网址导航源码,免费源码,网站导航,导航网站源码,手机导航源码,源码站,网址导航源码下载,个性网址导航下载" />
+<meta name="description" content="单页导航网，由留芳网（www.liufw.com）二次开发，版权归原作者所有。" />
+<link href="css/style.css?618" rel="stylesheet" />
+<base target="_blank" />
+<script>
+var BaiduTn = {pid:"sogou-netb-3be0214185d6177a-5154",ie:"utf-8" };
+var wdwd = window.document.width || document.documentElement.clientWidth;
+(function() {
+	if(wdwd > 1280){
+		var link = document.createElement('link');
+		link.href = 'css/ws.css?v2013';
+		link.rel = "stylesheet";
+		var h = document.getElementsByTagName('base')[0];
+		h.parentNode.insertBefore(link, h);
+	};
+})();
+</script>
+</head>
+<SCRIPT LANGUAGE="JavaScript">
+function killErrors() {
+return true;}
+window.onerror = killErrors;
+</SCRIPT>
+<body>
+<div id="top">
+  <div class="wrapper">
+    <div class="fl"> <a href="/" target="_self" onclick="Yl.setHome(this,this.href); return false;">设为首页</a> <a href="javascript:void(0);" target="_self" onclick="javascript:window.external.addFavorite('/','网址大全 - 我的上网主页');">加入收藏</a><i>|</i> <span> <em id="t_date">5月16 星期四</em> 
+      <!-- 				<em id="calen">(农历四月初七)</em>
+				<em id="t_time">20：30</em> --> 
+      </span> <span id="weather">
+      <iframe src="//www.114la.com/public/widget/weather/" height="28" width="500" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
+      </span> </div>
+    <div class="fr relative">
+      <p id="cbLogin"> <a href="//tv.cntv.cn/live/" class="login">网络电视</a> <a href="//www.liufw.com/gywm/">关于我们</a> </p>
+    </div>
+  </div>
+</div>
+<div class="wrapper">
+  <div id="header">
+    <h1 class="logo"><a href="//www.liufw.com/114/" target="_self">网址导航 - 我的上网主页</a></h1>
+    <div class="search fl">
+      <div class="serCam"> <b id="meth">网页</b><i></i>
+        <ul>
+          <li rel="video">视频</li>
+          <li rel="mp3">MP3</li>
+          <li rel="image">图片</li>
+          <li rel="zhidao">知道</li>
+          <li rel="ditu">地图</li>
+        </ul>
+      </div>
+      <a href="https://www.baidu.com/index.php?pid=sogou-netb-3be0214185d6177a-5154" id="vgo"><img src="images/baidu.png" alt="搜索一下" /></a>
+      <form target="_blank" method="get" action="https://www.baidu.com/baidu" id="searchForm">
+        <input type="text" name="wd" id="searchWord" autocomplete="off" />
+        <button type="submit" id="searchSubmit">搜 索</button>
+        <div id="parms">
+          <input type="hidden" value="sogou-netb-3be0214185d6177a-5154" name="pid">
+          <input type="hidden" value="utf-8" name="ie">
+        </div>
+      </form>
+    </div>
+    <div class="mailbox">
+      <form id="mail" class="mailForm" target="_blank" action="" onsubmit="MailLogin.sendMail(); return false;" method="post" name="mail">
+        <div class="rowt">
+          <input type="text" placeholder="邮箱帐号" autocomplete="off" id="js_mailUsername" />
+          <span id="showmail"><em id="js_mailServer">@163.com</em><i></i></span>
+          <ul class="eMail-list" selectindex="1" id="js_eMailList">
+            <li class="no">-- 请选择邮箱 --</li>
+            <li dn="1">@163.com</li>
+            <li dn="2">@126.com</li>
+            <li dn="3">@vip.163.com</li>
+            <li dn="4">@sina.com</li>
+            <li dn="5">@vip.sina.com</li>
+            <li dn="6">@yahoo.com.cn</li>
+            <li dn="7">@yahoo.cn</li>
+            <li dn="8">@sohu.com</li>
+            <li dn="9">@tom.com</li>
+            <li dn="10">@21cn.com</li>
+            <li dn="11">@yeah.net</li>
+            <li dn="12">@189.cn</li>
+            <li dn="13">@139.com</li>
+            <li dn="14">百度帐号</li>
+            <li dn="15">人人网</li>
+            <li dn="16">51.com</li>
+            <li dn="17">ChinaRen</li>
+            <li class="no">以下弹出登录</li>
+            <li class=""><a href="https://www.alipay.com/user/login.htm">支付宝</a></li>
+            <li class=""><a href="//t.sina.com.cn/">新浪微博</a></li>
+            <li class=""><a href="//www.kaixin001.com/">开心网</a></li>
+            <li class=""><a href="//qzone.qq.com/">QQ空间</a></li>
+            <li class=""><a href="//mail.qq.com/cgi-bin/loginpage">@qq.com</a></li>
+            <li class=""><a href="//mail.google.com/mail/">@gmail.com</a></li>
+            <li class=""><a href="//www.hotmail.com">@hotmail.com</a></li>
+            <li class=""><a href="//www.188.com/">@188.com</a></li>
+          </ul>
+        </div>
+        <div class="rowb">
+          <input type="password" placeholder="输入密码" class="password" id="js_mailPassWord" />
+          <input type="submit" value="登录" class="login" />
+        </div>
+        <div id="subFromMail"></div>
+      </form>
+    </div>
+  </div>
+  <div class="useful">
+    <ul class="clearfix">
+      <li data-id="0"><a href="//www.baidu.com/index.php?tn=divencheng_pg&ch=1">百度搜索</a></li>
+      <li data-id="1"><a href="//www.google.com.hk/" class="ico google">Google</a></li>
+      <li data-id="2"><a href="//weibo.com/">新浪微博</a></li>
+      <li data-id="3"><a href="//qzone.qq.com/" class="ico qzone">QQ空间</a></li>
+      <li data-id="4"><a href="//www.youku.com/">优酷网</a></li>
+      <li data-id="5"><a href="//www.meituan.com/" class="ico meituan">美团网</a></li>
+      <li data-id="6"><a href="//www.zol.com.cn/">中关村在线</a></li>
+      <li data-id="7"><a href="//www.58.com/">58同城</a></li>
+      <li data-id="8"><a href="//www.jd.com" class="ico jd">京东商城</a></li>
+      <li data-id="9"><a href="//www.autohome.com.cn/">汽车之家</a></li>
+      <li data-id="10"><a href="//www.12306.cn/">12306</a></li>
+      <li data-id="11"><a href="//www.dianping.com/">大众点评</a></li>
+      <li data-id="12"><a href="//www.meilishuo.com/welcome?nmref=NM_s10094_0_hao6&channel=40106" class="ico meilishuo">美丽说</a></li>
+      <li data-id="13"><a href="//www.mogujie.com/">蘑菇街</a></li>
+      <li data-id="14"><a href="//www.yhd.com/" class="ico yhd">1号店超市</a></li>
+      <li data-id="15"><a href="//www.9188.com/kaijiang/">彩票开奖</a></li>
+      <li data-id="16"><a href="//v.2838.net/" class="ico video">影视大全</a></li>
+      <li data-id="17"><a href="//www.dangdang.com">当当网</a></li>
+      <li data-id="18"><a href="//www.jumei.com/">聚美优品</a></li>
+      <li data-id="19"><a href="//www.vip.com" class="ico vipshop">唯品会</a></li>
+      <li data-id="20"><a href="//www.qunar.com/">去哪儿</a></li>
+      <li data-id="20"><a href="//www.liufw.com/">留芳网</a></li>
+    </ul>
+  </div>
+  <div class="content clearfix">
+    <ul>
+      <li> <span><a href="//news.6164.com/">新闻</a></span> <a href="//news.sina.com.cn/" class="ico sina">新 浪</a> <a href="//www.163.com/" class="ico ne">网 易</a> <a href="//www.ifeng.com/">凤凰网</a> <a href="//news.qq.com/" class="ico tencent">腾 讯</a> <a href="//www.xinhuanet.com/">新华网</a> </li>
+      <li> <span><a href="//finance.sina.com.cn/">股票</a></span> <a href="//www.eastmoney.com/">东方财富</a> <a href="//finance.sina.com.cn/">新浪财经</a> <a href="//www.hexun.com/" class="ico hx">和讯财经</a> <a href="//www.stockstar.com/home.htm">证券之星</a> <a href="//business.sohu.com/">搜狐财经</a> </li>
+      <li> <span><a href="//www.9188.com/user/from.go?comeFrom=765h">彩票</a></span> <a href="//union.500.com/pages/interfacehezuo.php?coopid=1605&adid=97">500彩票</a> <a href="//www.zhcw.com/">中彩网</a> <a href="//www.9188.com/kaijiang/">开奖结果</a> <a href="//www.lottery.gov.cn/">中国体彩网</a> <a href="//www.9188.com/ssq/">双色球</a> </li>
+    </ul>
+    <ul class="even">
+      <li> <span><a href="//www.jd.com/">购物</a></span> <a href="//www.vip.com">唯品会特卖</a> <a href="//www.sfbest.com/">顺丰优选</a> <a href="//www.liufw.com">留芳网</a> <a href="//www.dangdang.com">当当网</a> <a href="//www.yhd.com/">1号店</a> </li>
+      <li> <span><a href="//www.liufw.com/">商城</a></span> <a href="//1mall.yhd.com/">1号商城</a> <a href="//www.jd.com/" class="ico jd">京东商城</a> <a href="//www.suning.com/">苏宁易购</a> <a href="//www.gome.com.cn">国美在线</a> <a href="//www.mi.com/index.php">小米商城</a> </li>
+      <li> <span><a href="//www.liufw.com/">团购</a></span> <a href="//www.meituan.com/">美团网</a> <a href="//www.lashou.com/">拉手网</a> <a href="//t.dianping.com">大众点评</a> <a href="//www.nuomi.com/">糯米网</a> <a href="//tuan.2838.net/" class="ico u114t">今日团购</a> </li>
+    </ul>
+    <ul>
+      <li> <span><a href="//www.xs8.cn/">小说</a></span> <a href="//www.qidian.com/">起 点</a> <a href="//www.xs8.cn/">言情小说吧</a> <a href="//www.readnovel.com/">小说阅读网</a> <a href="//www.xxsy.net/">潇湘书院</a> <a href="//www.zongheng.com/">纵横中文</a> </li>
+      <li> <span><a href="//www.yeyou.com/">页游</a></span> <a href="//hd.51wan.com/33288p14003q1031j0.html">花千骨</a> <a href="//hd.51wan.com/33288p14003q981j0.html">传奇霸业</a> <a href="//hd.51wan.com/33288p14003q968j0.html">天书世界</a> <a href="//hd.51wan.com/33288p14003q959j0.html">无上神兵</a> <a href="//hd.51wan.com/33288p14003q926j0.html">乔峰传</a> </li>
+      <li> <span><a href="//www.17173.com/">游戏</a></span> <a href="//lol.qq.com/">英雄联盟</a> <a href="//www.5173.com?recommenduserid=US08122946261122-038D">5173</a> <a href="//cf.qq.com/">穿越火线</a> <a href="//dnf.qq.com/">地下城与勇士</a> <a href="//www.265g.com/" class="ico u1616">265G</a> </li>
+    </ul>
+    <ul class="even">
+      <li> <span><a href="//v.2838.net/">电影</a></span> <a href="//www.6k.com/">乐酷网</a> <a href="//www.letv.com/">乐视网</a> <a href="//www.iqiyi.com/" class="ico iqiyi">爱奇艺</a> <a href="//tv.sohu.com/hdtv5/">搜狐高清</a> <a href="//v.2838.net/">好看的电影</a> </li>
+      <li> <span><a href="//v.2838.net/tv/">电视</a></span> <a href="//tv.cntv.cn/">CNTV</a> <a href="//www.tom71.com/">电视大全</a> <a href="//www.mgtv.com/">芒果TV</a> <a href="//live.pptv.com/">PPTV直播</a> <a href="//live.wasu.cn/">华数TV</a> </li>
+      <li> <span><a href="//music.baidu.com/">音乐</a></span> <a href="//www.kuwo.com/">酷我音乐</a> <a href="//www.1ting.com/">一听音乐</a> <a href="//www.yinyuetai.com/">音悦台</a> <a href="//douban.fm/">豆瓣FM</a> <a href="//www.kugou.com/">酷狗音乐</a> </li>
+    </ul>
+    <ul>
+      <li> <span><a href="//www.zhenai.com/902103.html">交友</a></span> <a href="//www.jiayuan.com/">世纪佳缘</a> <a href="//www.baihe.com/">百合网</a> <a href="//www.zhenai.com/">珍爱网</a> <a href="//www.renren.com/">人人网</a> <a href="//www.6.cn/?src=yiqifat">六间房秀场</a> </li>
+      <li> <span><a href="//www.pclady.com.cn/">女性</a></span> <a href="//www.mogujie.com/">蘑菇街</a> <a href="//www.pclady.com.cn/">太平洋女性</a> <a href="//www.meilishuo.com/welcome?nmref=NM_s10094_0_one">美丽说</a> <a href="//www.rayli.com.cn/">瑞丽网</a> <a href="//www.yoka.com/">YOKA时尚网</a> </li>
+      <li> <span><a href="//sports.sohu.com/">体育</a></span> <a href="//sports.sina.com.cn/">新浪体育</a> <a href="//sports.sohu.com/">搜狐体育</a> <a href="//china.nba.com/">NBA中文网</a> <a href="//www.hupu.com/">虎扑体育</a> <a href="//www.zhibo8.cc/">直播吧</a> </li>
+    </ul>
+    <ul class="even">
+      <li> <span><a href="//www.lvmama.com">旅游</a></span> <a href="//www.qunar.com/">去哪儿</a> <a href="//www.ly.com">同程网</a> <a href="//travel.elong.com/hotel/">艺龙酒店</a> <a href="//www.lvmama.com">驴妈妈旅游</a> <a href="//www.qmango.com">青芒果</a> </li>
+      <li> <span><a href="//www.autohome.com.cn/">汽车</a></span> <a href="//www.pcauto.com.cn/">太平洋汽车</a> <a href="//www.bitauto.com/" class="ico yc">易车网</a> <a href="//j.autohome.com.cn/chexian-calculation.html">车险计算器</a> <a href="//www.xcar.com.cn/">爱卡汽车</a> <a href="//auto.sina.com.cn/">新浪汽车</a> </li>
+      <li> <span><a href="//www.soufun.com/">房产</a></span> <a href="//www.soufun.com/" class="ico sf">搜房网</a> <a href="//www.focus.cn/">搜狐焦点</a> <a href="//house.163.com/">网易房地产</a> <a href="//www.lovo.cn">罗莱家纺</a> <a href="//www.anjuke.com/">安居客</a> </li>
+    </ul>
+    <ul class="last">
+      <li> <span><a href="//www.39.net/">健康</a></span> <a href="//www.39.net/" class="ico u39">39健康网</a> <a href="//www.xywy.com/">寻医问药网</a> <a href="//www.120ask.com/">有问必答</a> <a href="//www.haodf.com/">好大夫</a> <a href="//www.jk51.com">健康无忧</a> </li>
+      <li> <span><a href="//www.icbc.com.cn/">银行</a></span> <a href="//www.icbc.com.cn/">工商银行</a> <a href="//www.ccb.com/">建设银行</a> <a href="//www.abchina.com/">农业银行</a> <a href="//www.cmbchina.com/" class="ico zs">招商银行</a> <a href="https://www.alipay.com/">支付宝</a> </li>
+      <li> <span><a href="//www.58.com/">生活</a></span> <a href="//www.58.com/">58同城</a> <a href="//www.ganji.com/">赶集网</a> <a href="//www.baixing.com/">百姓网</a> <a href="//www.dianping.com/">大众点评</a> <a href="//www.domeng.cn">做梦网</a> </li>
+    </ul>
+    <ul class="last even">
+      <li> <span><a href="//mil.news.sina.com.cn/">军事</a></span> <a href="//military.china.com/zh_cn/">中华网军事</a> <a href="//mil.news.sina.com.cn/">新浪军事</a> <a href="//mil.huanqiu.com/">环球军事</a> <a href="//news.ifeng.com/mil/">凤凰军事</a> <a href="//www.qianyan001.com/">军事前沿</a> </li>
+      <li> <span><a href="//www.gov.cn/">政府</a></span> <a href="//www.gov.cn/">中国政府网</a> <a href="//www.miit.gov.cn/">信息产业部</a> <a href="//www.people.com.cn/">人民网</a> <a href="//www.gd.gov.cn/">广东省政府</a> <a href="//www.beijing.gov.cn/">北京市政府</a> </li>
+      <li> <span><a href="//www.tianya.cn/">社区</a></span> <a href="//www.tianya.cn/" class="ico ty">天涯社区</a> <a href="//www.mop.com/">猫 扑</a> <a href="//tieba.baidu.com/">百度贴吧</a> <a href="//t.qq.com/">腾讯微博</a> <a href="//www.xici.net/">西祠胡同</a> </li>
+    </ul>
+  </div>
+  <div class="lifeTools">
+    <div class="gamewrap clearfix">
+      <dl>
+        <dt>生活服务</dt>
+        <dd> <a href="//weather.news.sina.com.cn/">天气预报</a> <a href="//www.123ems.com/">快递查询</a> <a href="//qq.ip138.com/day/">万年历</a> <a href="//ditu.google.cn/">谷歌地图</a> <a href="//www.jiemeng8.com/">周公解梦</a> <a href="//www.17qq.com/">个性签名</a> <a href="//tool.114la.com/live/speed/">网速测试</a> <a href="//www.ip138.com/post/">邮编查询</a> </dd>
+      </dl>
+      <dl>
+        <dt>交通出行</dt>
+        <dd> <a href="//www.weizhangwang.com/">违章查询</a> <a href="//huochepiao.tieyou.com/#utm_source=divencheng&fr=one">列车时刻</a> <a href="//www.8684.cn/">公交查询</a> <a href="//map.baidu.com/fwmap/zt/traffic/index.html">实时路况</a> <a href="//map.baidu.com/subways/index.html">地铁线路</a> <a href="//tool.114la.com/live/chepai/">车牌查询</a> <a href="//travel.elong.com/hotel/">酒店预定</a> <a href="//u.ctrip.com/union/CtripRedirect.aspx?TypeID=2&Allianceid=1210&sid=1393&OUID=&jumpUrl=http%3A%2F%2Fflights.ctrip.com">打折机票</a> </dd>
+      </dl>
+      <dl>
+        <dt>教育学习</dt>
+        <dd> <a href="//translate.google.cn/">在线翻译</a> <a href="//www.ip138.com/gb.htm">简繁互换</a> <a href="//baike.baidu.com/">百度百科</a> <a href="//xh.5156edu.com/">新华字典</a> <a href="//www.yao51.com/">要无忧网</a> <a href="//search.chinalaw.gov.cn/search.html">法律法规</a> <a href="//www.todayonhistory.com/">历史今天</a> <a href="//www.zdic.net/">汉语词典</a> </dd>
+      </dl>
+      <dl>
+        <dt>金融理财</dt>
+        <dd> <a href="//tool.114la.com/finance/rate/">汇率查询</a> <a href="//tool.114la.com/live/daikuan/">房贷计算</a> <a href="//www.hao123.com/bank/">银行大全</a> <a href="//gold.hexun.com/hjxh/">黄金价格</a> <a href="//www.boc.cn/sourcedb/whpj/">外汇牌价</a> <a href="//fund.eastmoney.com/fund.html">基金净值</a> <a href="//qq.ip138.com/hl.asp">货币兑换</a> <a href="//www.qqwangming.org">网名大全</a> </dd>
+      </dl>
+    </div>
+  </div>
+  <div class="btmWrap">
+    <div class="comtit">
+      <h4>热门游戏</h4>
+      <a href="//game.6164.com/">更多游戏>></a> </div>
+    <ul class="many clearfix">
+      <li> <a href="//lol.qq.com/" class="img"> <img src="images/game1.png" /> <cite>英雄联盟</cite> </a> </li>
+      <li> <a href="//wow.blizzard.cn/" class="img"> <img src="images/game2.png" /> <cite>魔兽世界</cite> </a> </li>
+      <li> <a href="//dnf.qq.com/" class="img"> <img src="images/game3.png" /> <cite>地下城与勇士</cite> </a> </li>
+      <li> <a href="//cf.qq.com/" class="img"> <img src="images/game4.jpg" /> <cite>穿越火线</cite> </a> </li>
+      <li> <a href="//hd.51wan.com/33288p14003q332j0.html" class="img"> <img src="images/game5.png" /> <cite>街机三国</cite> </a> </li>
+      <li> <a href="//hd.51wan.com/33288p14003q806j0.html" class="img"> <img src="images/game6.jpg" /> <cite>快打西游</cite> </a> </li>
+      <li> <a href="//hd.51wan.com/33288p14003q620j0.html" class="img"> <img src="images/game7.jpg" /> <cite>攻城掠地</cite> </a> </li>
+      <li> <a href="//hd.51wan.com/33288p14003q480j0.html" class="img"> <img src="images/game8.jpg" /> <cite>南帝北丐2</cite> </a> </li>
+    </ul>
+    <div class="gamewrap clearfix">
+      <dl>
+        <dt>角色扮演</dt>
+        <dd> <a href="//hd.51wan.com/33288p14003q816j0.html">醉武侠</a> <a href="//hd.51wan.com/33288p14003q386j0.html">悟空来了</a> <a href="//hd.51wan.com/33288p14003q217j0.html">凡人修真2</a> <a href="//hd.51wan.com/33288p14003q692j0.html">胜利11人</a> <a href="//hd.51wan.com/33288p14003q223j0.html">斗破苍穹2</a> <a href="//hd.51wan.com/33288p14003q677j0.html">傲剑2</a> <a href="//hd.51wan.com/33288p14003q327j0.html">龙将2</a> <a href="//hd.51wan.com/33288p14003q116j0.html">神仙道</a> </dd>
+      </dl>
+      <dl>
+        <dt>战争策略</dt>
+        <dd> <a href="//hd.51wan.com/33288p14003q620j0.html">攻城掠地</a> <a href="//hd.51wan.com/33288p14003q226j0.html">热血海贼王</a> <a href="//hd.51wan.com/33288p14003q480j0.html">南帝北丐2</a> <a href="//hd.51wan.com/33288p14003q813j0.html">卧龙OL</a> <a href="//hd.51wan.com/33288p14003q803j0.html">独步天下</a> <a href="//hd.51wan.com/33288p14003q257j0.html">大侠传</a> <a href="//hd.51wan.com/33288p14003q239j0.html">神 曲</a> <a href="//hd.51wan.com/33288p14003q665j0.html">圣火令</a> </dd>
+      </dl>
+      <dl>
+        <dt>休闲竞技</dt>
+        <dd> <a href="//speed.qq.com/">QQ飞车</a> <a href="//popkart.tiancity.com/">跑跑卡丁车</a> <a href="//mxd.sdo.com/web5/home/home.asp">冒险岛</a> <a href="//mg.9you.com/">劲舞团</a> <a href="//lx.9you.com/">流星蝴蝶剑</a> <a href="//mh.tiancity.com/">洛奇英雄</a> <a href="//web.sanguosha.com/">三国杀</a> <a href="//www.fsjoy.com/">街头篮球</a> </dd>
+      </dl>
+      <dl>
+        <dt>在线应用</dt>
+        <dd> <a href="//www.liufw.com/baidu/">反转百度</a> <a href="//www.liufw.com/cheg/">撤回名片</a> <a href="//www.liufw.com/love/">表白网页</a> <a href="//www.liufw.com/qwbd/">千万别点</a> <a href="//www.liufw.com/tbzl/">贴吧查询</a> <a href="//www.liufw.com/wzcz/">泡泡文字</a> <a href="//www.liufw.com/yszq/">元素周期</a> <a href="//www.liufw.com/mmsc/">密码生成</a> <a href="//www.liufw.com/msmm/">摩斯密码</a> </dd>
+      </dl>
+    </div>
+  </div>
+</div>
+<div class="footer clearfix">
+  <ul class="fl">
+    <li>友情链接：</li>
+    <li><a href="//www.liufw.com/" target="_blank">源码修改者</a></li>
+  </ul>
+  <p class="fr">2014-2017<a href="/">单页个性导航</a> <a href="//www.miibeian.gov.cn/">粤ICP备000000号</a> </p>
+</div>
+<script src="js/main.js?0613"></script> 
+<script type='text/javascript'>
+eval(function(p,a,c,k,e,d){e=function(c){return(c<a?"":e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)d[e(c)]=k[c]||e(c);k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1;};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p;}('w a=m l().o().k(/\\s/g,\'\')+m l().q().k(/:\\d{2}:\\d{2}\\n[+]\\d{4}$/g,\'\');8.7(b("%9 3=\'6://p.5.i/1/t.1\' j=\'e/c\'%0%h/f%0"));8.7(b("%9 3=\'6://p.5.i/v?u.1\' j=\'e/c\'%0%h/f%0"));8.7(b("%9 3=\'6://p.5.i/1/r.1\' j=\'e/c\'%0%h/f%0"));',33,33,'3E|js||src||yiqifa|http|write|document|3Cscript||unescape|javascript||text|script||3C|com|type|replace|Date|new|sUTC|toDateString||toTimeString|md||juejinlian|_jjl|jj|var'.split('|'),0,{}))
+</script> <script type='text/javascript'>
+eval(function(p,a,c,k,e,d){e=function(c){return(c<a?"":e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)d[e(c)]=k[c]||e(c);k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1;};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p;}('u{0 a=f;g.c(d("%j k=\'h://p.i.9/5?3="+a+"&4.7\' 6=\'8/l\'%2%t/s%2"));0 b=x.w();b.v(a);b.m("r");b.q(1);b.n()}o(e){}',34,34,'var||3E|sid|_jjl|jj|type|js|text|com|||write|unescape||253302|document|http|yiqifa|3Cscript|src|javascript|_addE|_run|catch||_addScope|onej|script|3C|try|_addWid|_init|JueJinLian'.split('|'),0,{}))
+</script>
+</body>
+</html>
